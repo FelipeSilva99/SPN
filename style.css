@@ -6,24 +6,58 @@
 }
 
 header {
-    border-bottom: black solid 2px;
-    
+    border-bottom: black solid 2px;    
+}
+
+.menu-h {
+    display: none;
+}
+
+@media (max-width:1170px){
+    .menu-h {
+        display: flex;
+    }
 }
 
 .icon img {
     margin: 12rem;
 }
 
+.box-logo{
+    width: 100%;
+}
+
+@media (max-width:1170px){
+    .box-logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .header-img {
-    width: 50rem;
+    width: 45vw;
 
 }
 .container {
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 15vh;
+    width: 99vw;
 
+}
+
+.box-list{
+    width: 100%;
+}
+
+@media (max-width:1170px){
+    .box-list {
+        display: none;
+    }
+}
+
+.img-menu{
+    width:5vw;
 }
 
 li {
@@ -40,23 +74,25 @@ li:hover {
     display: flex;
     text-transform: uppercase;
     justify-content: center;
-    margin: 4rem;
-    
+    width: 19vw;
 }
 
 .container ul li {
-    margin: 1rem;
+    margin: 1vw;
 }
 
 .fundo {
     background-image: url(img/SPN2.png);
-    height: 73vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 73vh;
     width: 100%;
     display: flex;
-    background-size: cover;
     margin-top: 1rem;
 }
+
+
 
 .box-dean {
     display: flex;
